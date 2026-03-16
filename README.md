@@ -4,7 +4,7 @@ A Netflix-themed personal portfolio website built with React, TypeScript, and Vi
 
 ## Live Demo
 
-[View Portfolio](https://shubhamresume.vercel.app)
+[View Portfolio](https://shubham-netflix-portfolio.vercel.app)
 
 ## Features
 
