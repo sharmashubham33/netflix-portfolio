@@ -1,0 +1,64 @@
+.continue-watching-row {
+  padding: 20px;
+  color: #fff;
+}
+
+.continue-watching-row .row-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.continue-watching-row .card-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.continue-watching-row .card-row::-webkit-scrollbar {
+  display: none;
+}
+
+.continue-watching-row .pick-card {
+  position: relative;
+  min-width: 200px;
+  height: 150px;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.continue-watching-row .pick-card:hover {
+  transform: scale(1.05);
+}
+
+.continue-watching-row .pick-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.cw-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.cw-overlay .pick-label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}

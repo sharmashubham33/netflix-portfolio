@@ -1,0 +1,56 @@
+.netflix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.netflix-logo-text {
+  font-family: 'Bebas Neue', 'Netflix Sans', Helvetica Neue, sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  color: #e50914;
+  letter-spacing: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: logoFadeIn 0.8s forwards ease-in;
+  text-shadow: 0 0 40px rgba(229, 9, 20, 0.6), 0 0 80px rgba(229, 9, 20, 0.3);
+  user-select: none;
+}
+
+.click-hint {
+  color: #555;
+  font-size: 0.85rem;
+  margin-top: 24px;
+  opacity: 0;
+  animation: logoFadeIn 0.8s forwards ease-in 1.2s;
+}
+
+@keyframes logoFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate.netflix-logo-text {
+  animation: zoomOut 3s forwards ease-in-out !important;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,61 @@
+.profile-card {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  height: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  text-decoration: none;
+  width: 10vw;
+}
+
+.profile-card:hover .image-container {
+  border-color: #e5e5e5;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 0.2em solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  color: #808080;
+  text-transform: capitalize;
+  display: block;
+  font-size: 1.3vw;
+  line-height: 1.2em;
+  margin: 0.6em 0;
+  min-height: 1.8em;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.profile-card:hover .profile-name {
+  color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 40vw;
+    height: 40vw;
+  }
+  .profile-name {
+    font-size: 14px;
+  }
+}

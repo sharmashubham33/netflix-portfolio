@@ -1,0 +1,27 @@
+.more-info-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.more-info-button:hover {
+  background-color: rgba(109, 109, 110, 0.9);
+}
+
+.info-label {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-spacer {
+  width: 0.8rem;
+}
